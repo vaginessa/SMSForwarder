@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<CheckBox
+		android:text="Forward as SMS"
+		android:id="@+id/chkSMS"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Enter the phone number to forward to" />
+	<EditText
+		android:id="@+id/txtPhoneNumber"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<CheckBox
+		android:text="Forward as Mail"
+		android:id="@+id/chkMail"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Enter the mail address to forward to" />
+	<EditText
+		android:id="@+id/txtMailAddress"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+
+
+	<Button
+		android:id="@+id/btnSave"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Save" />
+
+	<TextView
+		android:text=""
+		android:id="@+id/txtMessage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+</LinearLayout>
