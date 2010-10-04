@@ -49,8 +49,10 @@ public class SMSForwarder extends Activity {
 		// Set values to GUI elements
 		chkSMS.setChecked(asSMS);
 		chkMail.setChecked(asMail);
+		chkMail.setEnabled(false);
 		txtPhoneNumber.setText(recipientNumber);
 		txtMailAddress.setText(recipientMail);
+		txtMailAddress.setEnabled(false);
 
 		// Register on-click action listener
 		btnSave.setOnClickListener(new View.OnClickListener() {
