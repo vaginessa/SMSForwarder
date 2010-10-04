@@ -62,6 +62,7 @@ public class SMSreceiver extends BroadcastReceiver {
 
 	/**
 	 * Construct a new message, with the sender's name parsed in
+	 * "Sender message text"
 	 * 
 	 * @param sms
 	 * @return
