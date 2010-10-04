@@ -47,6 +47,7 @@ public class SMSForwarder extends Activity {
 		String recipientMail = settings.getString(SMSreceiver.RECIPIENT_MAIL, "");
 
 		// Set values to GUI elements
+		// Set Mail to false for now
 		chkSMS.setChecked(asSMS);
 		chkMail.setChecked(asMail);
 		chkMail.setEnabled(false);
