@@ -52,8 +52,9 @@ public class SMSForwarder extends Activity {
 		chkMail.setChecked(asMail);
 		chkMail.setEnabled(false);
 		txtPhoneNumber.setText(recipientNumber);
+		txtPhoneNumber.setEnabled(asSMS);
 		txtMailAddress.setText(recipientMail);
-		txtMailAddress.setEnabled(false);
+		txtMailAddress.setEnabled(asMail);
 
 		// Register on-click action listener
 		btnSave.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +63,28 @@ public class SMSForwarder extends Activity {
 				saveSettings();
 			}
 		});
+		// Register on-click action listener
+		chkSMS.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				Log.d(TAG, "chkSMS clicked");
+				setSMSEnabled();
+			}
+		});
+		// Register on-click action listener
+		chkMail.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				Log.d(TAG, "chkMail clicked");
+				setMailEnabled();
+			}
+		});
+	}
+	
+	private void setSMSEnabled() {
+		txtPhoneNumber.setEnabled(chkSMS.isChecked());
+	}
+	
+	private void setMailEnabled() {
+		txtMailAddress.setEnabled(chkMail.isChecked());
 	}
 
 	private void saveSettings() {
